@@ -31,29 +31,8 @@
 							</ul>
 						</li>
 						<li><a href="">Liên hệ</a></li>
-						<li><a href="login.php" class="overlayLink" data-action="login-form.html">Đăng nhập</a></li>
-						<div class="overlay" style="display: none;">
-							<div class="login-wrapper">
-								<div class="login-content">
-									<a class="close">x</a>
-									<h3>Đăng nhập</h3>
-									<form method="post" action="login.php">
-										<label for="username">
-											Username:
-											<input type="text" name="Tên người dùng" id="username" placeholder="Tên người dùng phải từ 8 đến 20 ký tự" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
-										</label>
-										<label for="password">
-											Password:
-											<input type="password" name="Mật khẩu" id="password" placeholder="Mật khẩu phải chứa 1 chữ hoa, chữ thường và số" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
-										</label>
-										<p>Nhấn Đăng nhập để tiếp tục^_^</p>
-										<div class="button">
-										<a href="login.html"> Đăng nhập</a></div>
-
-									</form>
-								</div>
-							</div>
-						</div>
+						<li><a href="pagelogin.html" >Đăng nhập</a></li>
+						
 							  <li class="search">
 								<img src="https://scontent.fsgn8-2.fna.fbcdn.net/v/t1.15752-9/273759058_4620509014728042_5843244292207055191_n.png?_nc_cat=111&ccb=1-5&_nc_sid=ae9488&_nc_ohc=spSFKQD98JYAX9EO-xr&tn=23X4evI5EdiUaScC&_nc_ht=scontent.fsgn8-2.fna&oh=03_AVLlaKWfl1LGqDUDtKEzqNyI0Cpz0UX-VpUc0icUQTFE5g&oe=62312488" width="45" height="34">
 								<div class="search-bar">
@@ -200,7 +179,7 @@
 						<p>Laptop ASUS UX482EA</p>
 					</div>
 					<div class="price">
-						<p>30.490.000</p>
+						<p>30.490.000 VNĐ</p>
 					</div>
 				</div></a>
 			</div>
@@ -346,34 +325,5 @@
 		}
 
 </script>
-<script src="http://code.jquery.com/jquery-latest.min.js"></script><script>
-	$(document).ready(function() {
-		$("#loginLink").click(function( event ){
-			event.preventDefault();
-			$(".overlay").fadeToggle("fast");
-		  });
-		
-		$(".overlayLink").click(function(event){
-			event.preventDefault();
-			var action = $(this).attr('data-action');
-			
-			$.get( "ajax/" + action, function( data ) {
-				$( ".login-content" ).html( data );
-			});	
-			
-			$(".overlay").fadeToggle("fast");
-		});
-		
-		$(".close").click(function(){
-			$(".overlay").fadeToggle("fast");
-		});
-		
-		$(document).keyup(function(e) {
-			if(e.keyCode == 27 && $(".overlay").css("display") != "none" ) { 
-				event.preventDefault();
-				$(".overlay").fadeToggle("fast");
-			}
-		});
-	});
-	</script>
+
 </html>

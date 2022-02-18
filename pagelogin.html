@@ -3,8 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>31-PS24275-Huỳnh Văn Trường</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="sanpham.css">
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<header class="sticky-top">
@@ -20,7 +23,7 @@
 				
 				<div class="col-8 menu">
 					<ul>
-						<li><a href="login.html">Trang chủ</a></li>
+						<li><a href="index.html">Trang chủ</a></li>
 						<li><a href="">Thương hiệu</a>
 							<ul class="menu_child">
 								<li><a href="">Asus</a></li>
@@ -32,6 +35,7 @@
 							</ul>
 						</li>
 						<li><a href="">Liên hệ</a></li>
+						
 						<li class="search">
 							<img src="https://scontent.fsgn8-2.fna.fbcdn.net/v/t1.15752-9/273759058_4620509014728042_5843244292207055191_n.png?_nc_cat=111&ccb=1-5&_nc_sid=ae9488&_nc_ohc=spSFKQD98JYAX9EO-xr&tn=23X4evI5EdiUaScC&_nc_ht=scontent.fsgn8-2.fna&oh=03_AVLlaKWfl1LGqDUDtKEzqNyI0Cpz0UX-VpUc0icUQTFE5g&oe=62312488" width="45" height="34">
 							<div class="search-bar">
@@ -48,44 +52,44 @@
 						  </form>
 						</div>
 					  </li>
-                         
 					</ul>
-                    <img src="https://scontent.fsgn13-2.fna.fbcdn.net/v/t1.15752-9/258879432_279355677617066_3563600543492345610_n.png?_nc_cat=108&ccb=1-5&_nc_sid=ae9488&_nc_ohc=qW3OW5RW5ZoAX9F5D7c&_nc_ht=scontent.fsgn13-2.fna&oh=03_AVI-cECOTNImIR1r2DHd-ZSgwM_sWGwDYMQ-KXhfkBNq9Q&oe=62313830" style="width: 3%">
-                          <a href="">tk123(mẫu)</a>
 				</div>
 			</div>
 		</div>
-	</header>
-          <body>
-            <div class="wrapper">
-				<div class="product-img">
-					<img src="https://lh3.googleusercontent.com/YXF9Kl90TeLwmFZtPTUlrGBDNdNLpxAFYqXajR5pcB5TCAFryzV5IG_2lKYXW8AkMLipCR19gy_omvwHKhDkzN3avAeRynez=w500-rw" >
-				  </div>
-              <div class="product-info">
-                <div class="product-text">
-                  <h1>Laptop LG Gram 2021 14ZD90P G.AX51A5 ( 14" WUXGA/Intel Core i5-1135G7/8GB/256GB SSD/Free DOS/1kg)</h1>
-                  <p>
-                    - CPU: Intel Core i5-1135G7 <br>
-                    - Màn hình: 14" IPS (1920 x 1200) <br>
-                    - RAM: 8GB DDR4 4266MHz <br>
-                    - Đồ họa: Intel Iris Xe Graphics <br>
-                    - Lưu trữ: 256GB SSD M.2 NVMe <br>
-                    - Hệ điều hành: Free DOS <br>
-                    - 72 Wh Pin liền <br>
-                    - Khối lượng: 1 kg <br>
-                    - ChuẩnIntel EVO <br>
-                </p>
-                </div>
-                <div class="product-price-btn">
-                  <p><span>30.990.000</span>Vnđ</p>
-                  <div class="button">
-                    <a href="login.html"> Mua ngay</a></div>
-                </div>
-              </div>
-            </div>
-          
-        </body>
-    
+        </header>
+        <section>
+			<div class="noi-dung">
+				<div class="form">
+					<form action="">
+						<div class="input-form">
+							<span>Tên Người Dùng</span>
+							<input type="text" name="">
+						</div>
+						<div class="input-form">
+							<span>Mật Khẩu</span>
+							<input type="password" name="">
+						</div>
+						<div class="nho-dang-nhap">
+							<label><input type="checkbox" name=""> Nhớ Đăng Nhập</label>
+						</div>
+						<div class="login">
+							<a href="login.html">
+								<p>Đăng nhập</p>
+							</a>
+						</div>
+						<div class="input-form">
+							<p>Bạn Chưa Có Tài Khoản? <a href="#">Đăng Ký</a></p>
+						</div>
+					</form>
+					<h3>Đăng Nhập Bằng Mạng Xã Hội</h3>
+					<ul class="icon-dang-nhap">
+						<li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+						<li><i class="fa fa-google" aria-hidden="true"></i></li>
+						<li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+					</ul>
+				</div>
+			</div>
+		</section>
 	<footer>
 		<div class="container">
 			<div class="row footer">
@@ -136,38 +140,19 @@
 		</div>
 	</footer>
 </body>
-<script src="js/slides.min.jquery.js"></script>
-   <script>
-		$(function(){
-			$('#products').slides({
-				preload: true,
-				preloadImage: 'img/loading.gif',
-				effect: 'slide, fade',
-				crossfade: true,
-				slideSpeed: 350,
-				fadeSpeed: 500,
-				generateNextPrev: true,
-				generatePagination: false
-			});
-		});
-	</script>
-<link rel="stylesheet" href="css/etalage.css">
-<script src="js/jquery.etalage.min.js"></script>
 <script>
-			jQuery(document).ready(function($){
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
 
-				$('#etalage').etalage({
-					thumb_image_width: 360,
-					thumb_image_height: 360,
-					source_image_width: 900,
-					source_image_height: 900,
-					show_hint: true,
-					click_callback: function(image_anchor, instance_id){
-						alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
-					}
-				});
+        signUpButton.addEventListener('click', () => {
+            container.classList.add('right-panel-active');
+        });
 
-			});
-		</script>	
+        signInButton.addEventListener('click', () => {
+            container.classList.remove('right-panel-active');
+        });
+    </script>
 </head>
+
 </html>
